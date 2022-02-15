@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <fieldset>Click to win $1,000,000!!</fieldset>
+    <legend>All it takes is one simple Click!</legend>
+
+    <form>
+      <label for="id-checkbox">Click here:</label>
+      <input type="checkbox" id="id-checkbox"/>
+    </form>
+    
+    <div id="output-box"></div>
+<script>
+document.querySelector("#id-checkbox").addEventListener("click", function(event) {
+         document.getElementById("output-box").innerHTML += "Sorry, Please Try Again!<br>";
+         event.preventDefault();
+}, false);
+</script>
+
+</body>
+</html>
